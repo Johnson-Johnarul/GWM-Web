@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <nav class="nav bd-grid">
+            <div class="nav_icon" id="nav-icon">
+                <img src="assets/icons/icon-menu.svg" alt="icon">
+            </div>
+
+            <div>
+                <a href="" class="nav-logo"><img src="assets/icons/nike-logo.svg" alt="logo"></a>
+            </div>
+
+            <div class="nav-menu" id="nav-list">
+                <ul class="nav-list-name">
+                    <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">PRODUCT</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">CUSTOMIZE</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">SALE
+                    </a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-shop">
+                <img src="assets/icons/shopping-bag.svg" alt="image-bag">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home  -->
+    <main class="main grid">
+        <div class="home">
+            <!-- Sneaker -->
+            <div class="sneaker">
+                <div class="sneaker__figure sneaker__place">
+                </div>
+
+                <div class="sneaker__place">
+                    <img src="assets/img/NikeAirMaxMotion2.png" alt="" class="sneaker__img shows sneaker" color="#A29596">
+
+                    <img src="assets/img/NikeAirMax Motion2black.png" alt="" class="sneaker__img" color="#111111">
+
+                    <img src="assets/img/Nike-Air-Max-Motion-2-Black-Red-Orbit(1).png" alt="" class="sneaker__img" color="#db5656">
+                </div>
+
+                <div class="sneaker__colors sneaker__place">
+                    <span class="sneaker__color sneaker__color-one active" primary="#A29596" color="#A29596"></span>
+
+                    <span class="sneaker__color sneaker__color-two" primary="#111111" color="#111111"></span>
+
+                    <span class="sneaker__color sneaker__color-three" primary="#db5656" color="#db5656"></span>
+                </div>
+            </div>
+            <!-- Information  -->
+            <div class="info">
+                <!-- Data  -->
+                <div class="data">
+                    <span class="data__subtitle">Nike</span>
+                    <h1 class="data__title">Air Max Motion 2</h1>
+                    <p class="data__description">They combine breathable mesh without seams for a traditional style.</p>
+                </div>
+    
+                <!-- Action  -->
+                <div class="actions">
+                    <!-- Size  -->
+                    <div class="size">
+                        <h3 class="size__title">Talles</h3>
+                        <div class="size__content">
+                            <span class="size__tallas active">
+                                8.5
+                            </span>
+                            <span class="size__tallas">
+                                9
+                            </span>
+                            <span class="size__tallas">
+                                9.5
+                            </span>
+                        </div>
+                    </div>
+    
+                    <!-- Qantity  -->
+                    <div class="quantity">
+                        <h3 class="quantity__title">Qty.</h3>
+                        <div class="quantity__content">
+                            <span onclick="decrement()" class="count">-</span>
+                            <span id="counter">1</span>
+                            <span onclick="increment()" class="count">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="price">
+                    <span class="price__title">$99.00</span>
+                    <a href="#" class="price__button"> ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
